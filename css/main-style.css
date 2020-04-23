@@ -1,0 +1,634 @@
+/* style.css */
+
+* {
+
+    margin: 0; padding: 0;
+  
+    box-sizing: border-box;
+  
+  }
+  
+   
+  
+  a { text-decoration: none;}
+  
+  ul { list-style-type: none;}
+  
+   
+  
+  body {
+  
+    font-size: 18px;
+  
+    font-family: 'Nanum Gothic', sans-serif;
+  
+    min-width: 1200px;
+  
+    color: #333;
+  
+  }
+  .header_wrap{
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+}
+
+#main_header{
+    width: 1200px;height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+#main_header > h1{
+    position: absolute;
+    left: 0;
+    top: 18px;
+}
+#gnb{
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
+#gnb > ul > li{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom:2px;
+    text-align: center;
+}
+#gnb > ul > li:hover{
+    background-color: #00a5e8;
+
+}
+#gnb > ul > li> a{
+    color: black;
+}
+#gnb > ul > li:hover> a{
+    color:white;
+}
+#gnb > ul > li:last-child{ margin-right: 0;}
+  
+   
+  
+   
+  
+  /* 비주얼 */
+  
+  #visual {
+  
+    position: relative;
+  
+    height: 650px;
+  
+    overflow: hidden;
+  
+  }
+  
+  #visual > .img {
+  
+    position: absolute;
+  
+    left: 0; top: 0;
+  
+    width: 1920px;
+  
+    height: 650px;
+  
+    left: 50%;
+  
+    margin-left: -960px;
+  
+  }
+  
+   
+  
+  #visual > .caption {
+  
+    position: relative;
+  
+    top: 40%;
+  
+    left: 0;
+  
+    text-align: center;
+  
+    font-size: 50px;
+  
+    text-shadow: 2px 2px 2px gray;
+  
+    font-weight: bold;
+  
+  }
+  
+   
+  
+  #visual > .caption > h1 {
+  
+    color: white;
+  
+  }
+  
+   
+  
+  #visual_pager {
+  
+    width: 1200px;
+  
+    overflow: hidden;
+  
+    background: #595656;
+  
+    position: absolute;
+  
+    bottom: 0;
+  
+    /* 중앙정렬 */
+  
+    left: 50%;
+  
+    margin-left: -600px;
+  
+  }
+  
+  #visual_pager > a {
+  
+    display: block;
+  
+    float: left;
+  
+    width: 33.33%;
+  
+    text-align: center;
+  
+    height: 55px;
+  
+    line-height: 55px;
+  
+    color: #fff;
+  
+  }
+  
+  /* 비주얼 버튼 배경색 상태  */
+  
+  #visual_pager > a.selected {
+  
+    background: #595656;
+  
+  }
+  
+  #visual_pager > a:hover {
+  
+    background: #b1cb17;
+  
+  }
+  
+   
+  
+  #visual .container-full {
+  
+    background: #0b223c;
+  
+  }
+  
+   
+  
+  /* 공지사항 */
+  
+  #notice {
+  
+    background: #00a5e8;
+  
+    color: #fff;
+  
+  }
+  
+  #notice > .notice-container {
+  
+    width: 1200px;
+  
+    height: 45px;
+  
+    line-height: 45px;
+  
+    margin: 0 auto;
+  
+    overflow: hidden;
+  
+  }
+  
+  #notice > .notice-container .title {
+  
+    float: left;
+  
+    font-size: 16px;
+  
+  }
+  
+  #notice > .notice-container .title span {
+  
+    margin-left: 1em;
+  
+    margin-right: 1em;
+  
+  }
+  
+  #notice > .notice-container .text {
+  
+    float: left;
+  
+    font-size: 15px;
+  
+  }
+  
+  #notice > .notice-container .date {
+  
+    float: right;
+  
+    font-size: 15px;
+  
+  }
+  
+  #notice p { padding-top: 0;}
+  
+   
+  
+  /* 공통 섹션 */
+  
+  section header h2 {
+  
+    font-size: 34px;
+  
+    text-transform: uppercase;
+  
+    font-weight: bold;
+  
+  }
+  
+  section header p { 
+  
+    font-size: 16px;
+  
+    color: #666;
+  
+    padding-top: 5px;
+  
+  }
+  
+  section h3 { 
+  
+    font-size: 20px;
+  
+  }
+  
+  section p { padding-top: 5px;}
+  
+  section .col-text, section .cp-col-text { margin-top: 1em;}
+  
+  section .row { margin-top: 30px;}
+  
+   
+  
+  /* operation 섹션 */
+  
+  #operation, 
+  
+  #company {
+  
+    width: 1200px;
+  
+    margin: 0 auto;
+  
+    padding-top: 50px;
+  
+    padding-bottom: 50px;
+  
+    text-align: center;
+  
+  }
+  
+  #operation > .row, 
+  
+  #company > .row {
+  
+    overflow: hidden;
+  
+  }
+  
+  #operation > .row > .col, 
+  
+  #company > .row > .col {
+  
+    position: relative;
+  
+    width: 386.66px; 
+  
+    height: 355px;
+  
+    margin-right: 20px;
+  
+    float: left;
+  
+    /* border: 1px solid green; */
+  
+    overflow: hidden;
+  
+  }
+  
+   
+  
+  #operation > .row > .col:hover > .col-text {
+  
+    position: absolute;
+  
+    top: 0;
+  
+    width: 100%;
+  
+    height: 100%;
+  
+    margin-top: 0;
+  
+  }
+  
+   
+  
+  section .col-text:hover {
+  
+    position: absolute;
+  
+    left: 0; top: 0;
+  
+    width: 100%; 
+  
+    height: 100%;
+  
+    background: rgba(177, 203, 23, 0.90);
+  
+    display: block;
+  
+  }
+  
+   
+  
+  section .col-text:hover .col-title{
+  
+    position: absolute;
+  
+    top: 30%;
+  
+    width: 100%;  
+  
+    color: white;
+  
+  }
+  
+   
+  
+  #operation > .row > .col .cover {
+  
+    display: none;
+  
+  }
+  
+   
+  
+  /* hover시 cover 박스 */
+  
+   
+  
+  #operation > .row > .col:hover .cover {
+  
+    position: absolute;
+  
+    top: 40%;
+  
+    color: white;
+  
+    display: block;
+  
+    padding:0 15px;
+  
+  }
+  
+   
+  
+   
+  
+  #operation > .row > .col:hover .btn-more {
+  
+    color: white;
+  
+    border: 1px solid white;
+  
+  }
+  
+   
+  
+  #operation > .row > .col:last-child,
+  
+  #company > .row > .col:last-child{
+  
+    margin-right: 0;
+  
+  }
+  
+   
+  
+  .opa:hover {opacity: 0.5;}
+  
+   
+  
+  /* more 버튼 */
+  
+  .btn-more {
+  
+    display: inline-block;
+  
+    width: 120px; height: 35px;
+  
+    line-height: 35px;
+  
+    border: 1px solid #333;
+  
+    margin-top: 24px;
+  
+    font-size: 15px;
+  
+    border-radius: 5px;
+  
+    color: #333;
+  
+  }
+  
+   
+  
+  section .cp-col-text > .btn-more:hover {
+  
+    background:rgba(177, 203, 23, 0.90);
+    border: 0px;
+  
+  }
+  
+   
+  
+  #company {
+  
+    color: #fff;
+  
+  }
+  
+   
+  
+  #company p { color: #fff;}
+  
+   
+  
+  #company .btn-more {
+  
+    color: #fff;
+  
+    border-color: #ccc;
+  
+  }
+  
+   
+  
+  /* 배경 이미지 채우기 */
+  
+  .company-container-full {
+  
+    background: #595656;
+  
+    background-image: url("../images/company-bg.jpg");
+  
+    background-size: cover;
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  #main_footer {position: relative;}
+#main_footer > #footer_menu {    
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+
+#main_footer > #footer_menu > ul {
+  max-width: 1200px;
+  width: 100%;
+  margin-left : auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#main_footer > #footer_menu > ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+#main_footer > #footer_menu > ul > li {
+  display: inline-block;
+
+}
+
+#main_footer > #footer_menu > ul > li > a:first-child{
+  padding-left:0;
+}
+
+#main_footer > #footer_menu > ul > li > a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666;
+  position: relative;
+}
+
+#main_footer > #footer_menu > ul > li:before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+  margin: -2px 18px;
+  display: inline-block;
+}
+
+#main_footer > #footer_menu > ul > li:first-child:before {
+  display: none;
+}
+
+#main_footer > #footer_menu > ul > .btn-top{
+  position: absolute;
+  right: 0%;
+  background-color: gray;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#main_footer > #footer_menu > ul > .btn-top:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+
+
+.footer_info {
+  position: relative; 
+  width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto;
+  padding: 33px 0;
+}
+
+.footer_info > .footer_logo {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 300px;
+}
+
+.footer_info > .footer_logo img {
+  width: 100%;
+}
+
+
+.footer_info > address {
+  display: block;
+  margin-left: 350px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.footer_info > address b {
+  display: block;
+  font-size: 15px;
+  color: #666;
+  line-height: 26px;
+  font-family: sh;
+  font-weight: normal;
+}
+
+
+.footer_info > address span {
+  display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #666;
+    line-height: 26px;
+  }
+
+  .footer_info > address .copy {
+    display: block;
+    padding-top: 10px;
+    font-size: 15px;
+    color: #999;
+    line-height: 20px;
+}
